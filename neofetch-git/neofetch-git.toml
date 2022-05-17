@@ -1,0 +1,15 @@
+name = 'neofetch'
+desc = '🖼️ A command-line system information tool written in bash 3.2+'
+version = 'git'
+version_type = 'development'
+license = 'MIT'
+archs = ['universal']
+linux_archs = ['any']
+types = ['build']
+dependencies = []
+
+[build]
+repo = 'https://github.com/dylanaraps/neofetch'
+branch = 'master'
+format_scripts = true
+scripts = [['make', 'PREFIX={prefix}', 'install']]
